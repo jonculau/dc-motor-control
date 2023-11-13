@@ -30,7 +30,8 @@ $$\begin{cases} \dot{x} = f(x,u,t)\\ y = g(x,u,t) \end{cases}$$
 
 this system can be described by a set of equations of the form:
 
-$$\begin{cases} \dot{x} = A(t)x(t) + 	B(t)u(t)\\ y(t) = C(t)x(t) + D(t)u(t) \end{cases}$$
+$$\begin{cases} \dot{x} = A(t)x(t) + B(t)u(t)
+\\ y(t) = C(t)x(t) + D(t)u(t) \end{cases}$$
 
 where $x$ is the state vector, $u$ is the input vector, $y$ is the output vector, $A$ is the state matrix, $B$ is the input matrix, $C$ is the output matrix and $D$ is the feedthrough matrix.
 The state-space model of the DC motor is given by:
