@@ -45,5 +45,9 @@ K_t/J & -\eta/J \end{bmatrix}\begin{bmatrix} I_a\\
 
 $$y(t) = \begin{bmatrix}0 & 1\end{bmatrix}\begin{bmatrix} I_a \\ \omega \end{bmatrix} + \begin{bmatrix}0\end{bmatrix}e_a$$
 
+## DCMotor.py
+The file `DCMotor.py` contains the class `dc_motor` which is used to create a DC motor object. The represents a DC motor and provides methods for simulating its behavior and retrieving simulation data.
 
+## Control-sysnthesis.ipynb
+Step by step control synthesis of the DC motor.
 
