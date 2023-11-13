@@ -25,26 +25,15 @@ where $K_b$ is the back *emf* constant.
 
 ## DC Motor State-Space Model
 Considering a generic system as follow:
-$$
-\begin{cases}
-    \dot{x} = f(x,u,t)\\
-    y = g(x,u,t)
-\end{cases}$$
+$$\begin{cases} \dot{x} = f(x,u,t)\\ y = g(x,u,t) \end{cases}$$
+
 this system can be described by a set of equations of the form:
-$$\begin{cases}
-\dot{x} = A(t)x(t) + 	B(t)u(t)\\
-y(t) = C(t)x(t) + D(t)u(t)
-\end{cases}$$
+$$\begin{cases} \dot{x} = A(t)x(t) + 	B(t)u(t)\\ y(t) = C(t)x(t) + D(t)u(t) \end{cases}$$
+
 where $x$ is the state vector, $u$ is the input vector, $y$ is the output vector, $A$ is the state matrix, $B$ is the input matrix, $C$ is the output matrix and $D$ is the feedthrough matrix.
 The state-space model of the DC motor is given by:
-$$\begin{bmatrix}\dot{I_a}\\\dot{\omega}\end{bmatrix} = \begin{bmatrix}
-    -R/L & -K_b/L \\
-    K_t/J & -\eta/J
-\end{bmatrix}\begin{bmatrix}
-    I_a\\\omega
-\end{bmatrix} + \begin{bmatrix}
-    1/L\\0
-\end{bmatrix}e_a$$
+$$\begin{bmatrix}\dot{I_a}\\\dot{\omega}\end{bmatrix} = \begin{bmatrix} -R/L & -K_b/L \\ K_t/J & -\eta/J \end{bmatrix}\begin{bmatrix} I_a\\\omega \end{bmatrix} + \begin{bmatrix} 1/L\\0 \end{bmatrix}e_a$$
+
 $$y(t) = \begin{bmatrix}0 & 1\end{bmatrix}\begin{bmatrix} I_a \\ \omega \end{bmatrix} + \begin{bmatrix}0\end{bmatrix}e_a$$
 
 
